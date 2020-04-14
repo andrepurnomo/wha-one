@@ -1,9 +1,11 @@
 // Install service worker
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("../../service-worker.js").then((reg) => {
-      console.log("Service worker registered.", reg);
-    });
+    navigator.serviceWorker
+      .register("https://andrepurnomo.github.io/wha-one/service-worker.js")
+      .then((reg) => {
+        console.log("Service worker registered.", reg);
+      });
   });
   document.getElementById("serviceInfo").style.display = "none";
 } else {
