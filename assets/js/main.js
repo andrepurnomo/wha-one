@@ -138,6 +138,7 @@ function chatHistory(cc, tel) {
   return false;
 }
 
+// FOR HOME SCREEN
 let deferredPrompt;
 
 window.addEventListener("beforeinstallprompt", (e) => {
@@ -166,6 +167,7 @@ document.getElementById("installButton").addEventListener("click", (e) => {
 
 window.addEventListener("load", () => {
   if (navigator.standalone) {
+    document.getElementById("installButton").style.display = "none";
     console.log("Launched: Installed (iOS)");
   } else if (matchMedia("(display-mode: standalone)").matches) {
     console.log("Launched: Installed");
