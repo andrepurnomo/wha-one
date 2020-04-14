@@ -34,7 +34,7 @@ function chatButton() {
     createHistory(cc, tel, name);
     alert(cc + tel);
 
-    // window.location.href = "https://wa.me/" + cc + tel;
+    window.location.href = "https://wa.me/" + cc + tel;
     return false;
   }
 }
@@ -134,7 +134,7 @@ function renderHistory() {
 function chatHistory(cc, tel) {
   alert(cc.toString() + tel.toString());
 
-  // window.location.href = "https://wa.me/" + cc + tel;
+  window.location.href = "https://wa.me/" + cc + tel;
   return false;
 }
 
