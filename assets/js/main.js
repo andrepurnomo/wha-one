@@ -166,9 +166,13 @@ document.getElementById("installButton").addEventListener("click", (e) => {
 });
 
 window.addEventListener("load", () => {
+  let params = new URL(document.location).searchParams;
   if (navigator.standalone) {
     document.getElementById("installButton").style.display = "none";
     console.log("Launched: Installed (iOS)");
+  } else if (params.get("user_mode") == "app") {
+    document.getElementById("installButton").style.display = "none";
+    console.log("Launched: Installed (Android)");
   } else if (matchMedia("(display-mode: standalone)").matches) {
     document.getElementById("installButton").style.display = "none";
     console.log("Launched: Installed");
