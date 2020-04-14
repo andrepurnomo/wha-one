@@ -5,12 +5,13 @@ const CACHE_NAME = "static-cache-v1";
 
 // CODELAB: Add list of files to cache here.
 const FILES_TO_CACHE = [
-  "/manifest.json",
-  "/index.html",
-  "/history.html",
-  "/assets/js/main.js",
-  "/assets/images/icon.png",
-  "/assets/images/favicon.png",
+  "./manifest.json",
+  "./index.html",
+  "./history.html",
+  "./assets/js/main.js",
+  "./assets/images/icon.png",
+  "./assets/images/favicon.png",
+  "./assets/images/background.png",
   "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css",
 ];
 
