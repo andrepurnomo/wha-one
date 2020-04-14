@@ -170,6 +170,7 @@ window.addEventListener("load", () => {
     document.getElementById("installButton").style.display = "none";
     console.log("Launched: Installed (iOS)");
   } else if (matchMedia("(display-mode: standalone)").matches) {
+    document.getElementById("installButton").style.display = "none";
     console.log("Launched: Installed");
   } else {
     console.log("Launched: Browser Tab");
