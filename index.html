@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whatsapp One</title>
+    <meta
+      name="description"
+      content="Whatsapp this number, do not save to my contact. Don't worry about adding to your Contacts. We will bring you to
+              Whatsapp this contact without adding to your Contacts."
+    />
+    <meta name="theme-color" content="#009688" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Whatsapp One" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <style>
+      .hero {
+        background-image: url("assets/images/background.png");
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container" style="flex-grow: 0 !important;">
+          <h1 class="title">
+            <b>Whatsapp this number, do not save to my contact.</b>
+          </h1>
+          <p style="margin-bottom: 20px;">
+            Don't worry about adding to your Contacts. We will bring you to
+            Whatsapp this contact without adding to your Contacts.
+          </p>
+          <div id="serviceInfo" class="notification is-light">
+            Your browser is not supported for offline mode, only online.
+          </div>
+          <div class="field">
+            <label class="name">Name</label>
+            <div class="control">
+              <input
+                id="name"
+                class="input"
+                type="text"
+                placeholder="Name (Optional)"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="cc">Country Code</label>
+            <div class="control">
+              <input
+                id="cc"
+                class="input"
+                type="number"
+                placeholder="Country Code"
+                required
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="tel">Phone Number</label>
+            <div class="control">
+              <input
+                id="tel"
+                class="input"
+                type="number"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+          </div>
+          <div class="field" style="padding-top: 20px;">
+            <button
+              class="button is-primary is-fullwidth"
+              onclick="chatButton()"
+            >
+              Chat
+            </button>
+          </div>
+          <div id="historyButton" class="field" style="padding-top: 20px;">
+            <a href="history.html" class="button is-info is-fullwidth">
+              History
+            </a>
+          </div>
+          <div id="installButton" class="field" style="padding-top: 20px;">
+            <a class="button is-dark is-fullwidth">
+              Install App
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Whatsapp One</strong> by
+          <a href="https://www.instagram.com/andreagungpurnomo/"
+            >Andre Purnomo</a
+          >. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+          Inspired from <a href="wha.one">Wha.One</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="assets/js/main.js"></script>
+</html>

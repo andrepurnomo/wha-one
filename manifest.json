@@ -1,0 +1,21 @@
+{
+  "background_color": "#009688",
+  "description": "Whatsapp this number, do not save to my contact.",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "assets/images/favicon.png",
+      "sizes": "194x194",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "name": "Whatsapp One",
+  "short_name": "Wha One",
+  "start_url": "/index.html",
+  "theme_color": "#009688"
+}
